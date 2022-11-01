@@ -5,17 +5,15 @@ const loadCountries = () => {
 };
 
 const displayCountries = (countries) => {
-  console.log(countries[0]);
   const allCountries = countries.map((country) => singleCountry(country));
   const countriesDiv = document.getElementById("countries");
   countriesDiv.innerHTML = allCountries.join(" ");
 };
 
 const singleCountry = (country) => {
-  console.log(country.flags.png);
   return `
         <div class="country">
-            <h2>${country.name.common}</h2>
+            <h1>${country.name.common}</h1>
             <img src="${country.flags.png}">
         </div> 
   `;

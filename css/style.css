@@ -7,6 +7,12 @@
     border: 1px solid yellowgreen;
     background-color: #d4d7f4;
     border-radius: 10px;
+    padding: 10px;
+}
+
+.country h1{
+    text-align: center;
+    color: #f10af1;
 }
 
 .country img{
