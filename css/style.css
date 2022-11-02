@@ -10,7 +10,7 @@
     padding: 10px;
 }
 
-.country h1{
+.country{
     text-align: center;
     color: #f10af1;
 }
@@ -18,4 +18,13 @@
 .country img{
     width: 100%;
     height: 200px;
+}
+
+@media only screen and (max-width:688px) {
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .country img{
+        width: 100%;
+    }
 }
