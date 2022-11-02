@@ -10,9 +10,8 @@ const displayCountries = (countries) => {
   countriesDiv.innerHTML = allCountries.join(" ");
 };
 
-const singleCountry = (country) => {
-  // use destructuring option 1
-  const { name, flags, area, region } = country;
+const singleCountry = ({ name, flags, area, region }) => {
+  // use destructuring option 2
   return `
         <div class="country">
             <h2>${name.common}</h2>
@@ -21,6 +20,17 @@ const singleCountry = (country) => {
             <img src="${flags.png}">
         </div> 
   `;
+
+  // use destructuring option 1
+  // const { name, flags, area, region } = country;
+  // return `
+  //       <div class="country">
+  //           <h2>${name.common}</h2>
+  //           <p>Area: ${area} </p>
+  //           <p>Region: ${region}</p>
+  //           <img src="${flags.png}">
+  //       </div>
+  // `;
 
   // return `
   //       <div class="country">
